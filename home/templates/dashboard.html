@@ -1,1 +1,12 @@
-<h1>Dashboard</h1>
+{% extends 'base.html' %}
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock %}
+
+{% block content %}
+    {% include 'dashboard_content.html' %}
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock %}

@@ -34,7 +34,7 @@ def signin(request):
         user = auth.authenticate(username=request.POST['username'], password=request.POST['password'])
         if User is not None:
             auth.login(request, user)
-            return redirect('home')
+            return redirect('dashboard')
         else:
             return render(request, 'signin.html', { 'error' : 'Incorrect username or password'})
     else:
