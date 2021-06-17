@@ -93,6 +93,8 @@ function submitJoinUsForm() {
 
     // Member Organization
     let memberOrganization = $("#memberOrganization").val()
+
+    $('#joinUsForm').submit()
 }
 
 function resetJoinUsForm() {

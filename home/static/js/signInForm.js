@@ -13,6 +13,9 @@ function submitSignInForm() {
     if (password.length == 0) {
         $('#signInpasswordRequired').removeClass('d-none')
     }
+
+    $('#signInForm').submit()
+
 }
 
 function resetSignInForm() {
