@@ -95,8 +95,9 @@ function submitJoinUsForm() {
     // Member Organization
     let memberOrganization = $("#memberOrganization").val()
 
+
     $('#joinUsForm').submit(function (e){
-        e.preventDefault();
+        e.preventDefault(); //prevents refresh or reload of form before validation
     });
 }
 

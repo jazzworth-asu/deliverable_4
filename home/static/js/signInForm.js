@@ -15,7 +15,8 @@ function submitSignInForm() {
     }
 
     $('#signInForm').submit(function (e){
-        e.preventDefault();
+        e.preventDefault(); //prevents refresh or reload of form before validation
+
 
     });
 
