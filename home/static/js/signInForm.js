@@ -14,7 +14,10 @@ function submitSignInForm() {
         $('#signInpasswordRequired').removeClass('d-none')
     }
 
-    $('#signInForm').submit()
+    $('#signInForm').submit(function (e){
+        e.preventDefault();
+
+    });
 
 }
 

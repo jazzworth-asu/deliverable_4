@@ -1,4 +1,5 @@
 function submitJoinUsForm() {
+  
 
     resetJoinUsForm() 
 
@@ -94,7 +95,9 @@ function submitJoinUsForm() {
     // Member Organization
     let memberOrganization = $("#memberOrganization").val()
 
-    $('#joinUsForm').submit()
+    $('#joinUsForm').submit(function (e){
+        e.preventDefault();
+    });
 }
 
 function resetJoinUsForm() {
