@@ -11,7 +11,7 @@ function uppercaseExistsInPassword(password) {
     return (/[A-Z]/.test(password))
 }
 
-function digitExistsInPassword(password) {
+function digitExistsInValue(password) {
     return (/[0-9]/.test(password))
 }
 

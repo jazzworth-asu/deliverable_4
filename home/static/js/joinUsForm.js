@@ -32,7 +32,7 @@ function submitJoinUsForm() {
     if (!lowercaseExistsInPassword(password)) {
         $('#passwordLowercase').removeClass('d-none')
     }
-    if (!digitExistsInPassword(password)) {
+    if (!digitExistsInValue(password)) {
         $('#passwordDigit').removeClass('d-none')
     }
 
@@ -66,6 +66,9 @@ function submitJoinUsForm() {
     let city = $("#city").val()
     if (city.length === 0) {
         $('#cityRequired').removeClass('d-none')
+    }
+    if (digitExistsInValue(city)) {
+        $('#cityDigit').removeClass('d-none')
     }
 
     // Zipcode
@@ -121,6 +124,8 @@ function resetJoinUsForm() {
     if (!$("#streetAddressRequired").hasClass("d-none")) $("#streetAddressRequired").addClass("d-none")
 
     if (!$("#cityRequired").hasClass("d-none")) $("#cityRequired").addClass("d-none")
+    if (!$("#cityDigit").hasClass("d-none")) $("#cityDigit").addClass("d-none")
+
     if (!$("#stateRequired").hasClass("d-none")) $("#stateRequired").addClass("d-none")
     if (!$("#zipCodeRequired").hasClass("d-none")) $("#zipCodeRequired").addClass("d-none")
     if (!$("#telRequired").hasClass("d-none")) $("#telRequired").addClass("d-none")

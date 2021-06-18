@@ -32,7 +32,7 @@ def signin(request):
     if(request.method == 'POST'):
         #see if it's an actual user
         user = auth.authenticate(username=request.POST['username'], password=request.POST['password'])
-        if User is not None:
+        if user is not None:
             auth.login(request, user)
             return redirect('dashboard')
         else:

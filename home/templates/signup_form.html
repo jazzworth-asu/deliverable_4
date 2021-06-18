@@ -82,6 +82,8 @@
                 <input type="text" class="form-control" id="city">
                 <span class="text-danger d-none" id="cityRequired">- City is
                     required.<br></span>
+                <span class="text-danger d-none" id="cityDigit">- City must not 
+                    contain digit.<br></span>
             </div>
 
             <label for="state" class="form-label required">State (US states only)</label>
@@ -176,7 +178,7 @@
                 <input type="text" class="form-control" id="memberOrganization">
             </div>
 
-            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
+            <a class="btn btn-outline-danger" href="{% url 'home' %}">Cancel</a>
             <button type="submit" class="btn btn-outline-primary" id="joinUsButton">Sign Up</button>
             <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
         </form>
